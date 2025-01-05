@@ -52,3 +52,4 @@ async def test_validate_uuid_format():
 
     with pytest.raises(HTTPException):
         UserRepository.validate_uuid_format(invalid_uuid)
+        
