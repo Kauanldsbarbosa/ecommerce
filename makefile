@@ -12,4 +12,9 @@ build-image:
 up: build-image
 	docker-compose -f $(COMPOSE_FILE) up -d
 
+down:
+	docker-compose down
+
+test:
+	pytest
 	

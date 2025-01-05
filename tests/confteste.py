@@ -14,8 +14,7 @@ def db_session():
     yield session
     session.close()
     metadata.drop_all(bind=engine)
-    if os.path.exists("databaseteste.db"):
-        os.remove("databaseteste.db")
+
 
 
 @pytest.fixture
