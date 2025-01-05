@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "aurora"
+version = "0.1.0"
+description = ""
+authors = ["kauan <kauanldsbcorp@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+uvicorn = "^0.34.0"
+sqlalchemy = "^2.0.36"
+alembic = "^1.14.0"
+psycopg2-binary = "^2.9.10"
+asyncpg = "^0.30.0"
+aiosqlite = "^0.20.0"
+pytest-asyncio = "^0.25.0"
+bcrypt = "^4.2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.4" 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
